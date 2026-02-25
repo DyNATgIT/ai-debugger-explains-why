@@ -1,40 +1,35 @@
-<![CDATA[<div align="center">
+<div align="center">
 
-```
-██████╗ ███████╗██████╗ ██╗   ██╗ ██████╗  ██████╗ ███████╗██████╗
-██╔══██╗██╔════╝██╔══██╗██║   ██║██╔════╝ ██╔════╝ ██╔════╝██╔══██╗
-██║  ██║█████╗  ██████╔╝██║   ██║██║  ███╗██║  ███╗█████╗  ██████╔╝
-██║  ██║██╔══╝  ██╔══██╗██║   ██║██║   ██║██║   ██║██╔══╝  ██╔══██╗
-██████╔╝███████╗██████╔╝╚██████╔╝╚██████╔╝╚██████╔╝███████╗██║  ██║
-╚═════╝ ╚══════╝╚═════╝  ╚═════╝  ╚═════╝  ╚═════╝ ╚══════╝╚═╝  ╚═╝
-```
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:00e5ff,100:00ff88&height=200&section=header&text=D%20E%20B%20U%20G%20G%20E%20R&fontSize=60&fontColor=ffffff&animation=fadeIn&fontAlignY=35&desc=Advanced%20Debug%20Engine%20That%20Explains%20Why&descSize=18&descAlignY=55&descColor=8b949e" width="100%"/>
 
 <br/>
 
-<img src="https://img.shields.io/badge/%E2%9A%A1-ADVANCED_DEBUG_ENGINE-00e5ff?style=for-the-badge&labelColor=0a0e1a" alt="Advanced Debug Engine"/>
+<a href="https://ai-debugger-explains-why.surge.sh"><img src="https://img.shields.io/badge/%F0%9F%9A%80%20LIVE%20DEMO-ai--debugger--explains--why.surge.sh-00e5ff?style=for-the-badge&labelColor=0d1117" alt="Live Demo"/></a>
 
-### 🔮 *Don't just find the bug. Understand the **why**.*
+<br/><br/>
 
-<br/>
+<a href="https://react.dev"><img src="https://img.shields.io/badge/React%2019-61DAFB?style=flat-square&logo=react&logoColor=black" alt="React"/></a>
+<a href="https://typescriptlang.org"><img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"/></a>
+<a href="https://vite.dev"><img src="https://img.shields.io/badge/Vite%207-646CFF?style=flat-square&logo=vite&logoColor=white" alt="Vite"/></a>
+<a href="https://tailwindcss.com"><img src="https://img.shields.io/badge/Tailwind%20v4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white" alt="Tailwind"/></a>
 
-[![Live Demo](https://img.shields.io/badge/🚀_TRY_IT_LIVE-ai--debugger--explains--why.surge.sh-00e5ff?style=for-the-badge&labelColor=0d1117&logoColor=white)](https://ai-debugger-explains-why.surge.sh)
+<br/><br/>
 
-<br/>
-
-[![React](https://img.shields.io/badge/React_19-61DAFB?style=flat-square&logo=react&logoColor=black)](https://react.dev)
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://typescriptlang.org)
-[![Vite](https://img.shields.io/badge/Vite_7-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vite.dev)
-[![TailwindCSS](https://img.shields.io/badge/Tailwind_v4-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com)
-
----
+<table>
+<tr>
+<td>
 
 > *"This failed because your assumption that `arr.length` is a valid array index is **false**."*
 >
-> — *DEBUGGER, after analyzing your off-by-one error*
+> — DEBUGGER, after analyzing your off-by-one error
 
----
+</td>
+</tr>
+</table>
 
 </div>
+
+<br/>
 
 ## 🧬 The Philosophy
 
@@ -42,177 +37,205 @@ Most debuggers tell you **what** went wrong — a line number, a stack trace, ma
 
 **DEBUGGER** tells you **why**.
 
-It identifies the **false assumption** hiding in your mental model — the invisible belief that made you write the bug in the first place. Because fixing a bug without understanding it means you'll write it again.
+It identifies the **false assumption** hiding in your mental model — the invisible belief that made you write the bug in the first place.
 
-```
-┌──────────────────────────────────────────────────────────┐
-│                                                          │
-│   Traditional Debugger:  "Error on line 3"               │
-│                                                          │
-│   DEBUGGER:  "This failed because your assumption        │
-│               that arr.length is a valid array index      │
-│               is false. Arrays are zero-indexed, so       │
-│               an array of length 5 has indices 0–4."      │
-│                                                          │
-└──────────────────────────────────────────────────────────┘
-```
+<table>
+<tr>
+<td>🔴</td>
+<td><b>Traditional Debugger</b></td>
+<td><i>"Error on line 3"</i></td>
+</tr>
+<tr>
+<td>🟢</td>
+<td><b>DEBUGGER</b></td>
+<td><i>"This failed because your assumption that <code>arr.length</code> is a valid array index is false. Arrays are zero-indexed, so an array of length 5 has indices 0–4."</i></td>
+</tr>
+</table>
 
----
+<br/>
 
 ## ⚙️ How It Works
 
-<div align="center">
+<table>
+<tr>
+<th>🔍 Phase 1</th>
+<th>➜</th>
+<th>🧩 Phase 2</th>
+<th>➜</th>
+<th>💡 Phase 3</th>
+<th>➜</th>
+<th>✅ Phase 4</th>
+</tr>
+<tr>
+<td align="center"><b>TRACE</b><br/><sub>Step through execution<br/>line by line</sub></td>
+<td align="center">⟶</td>
+<td align="center"><b>MATCH</b><br/><sub>Identify bug pattern<br/>with confidence %</sub></td>
+<td align="center">⟶</td>
+<td align="center"><b>ANALYZE</b><br/><sub>Find the false<br/>assumption</sub></td>
+<td align="center">⟶</td>
+<td align="center"><b>EXPLAIN</b><br/><sub>Plain-English<br/>root cause + fix</sub></td>
+</tr>
+</table>
 
-```
-╔═══════════════╗     ╔═══════════════╗     ╔═══════════════╗     ╔═══════════════╗
-║  🔍 TRACE     ║ ──▶ ║  🧩 MATCH     ║ ──▶ ║  💡 ANALYZE   ║ ──▶ ║  ✅ EXPLAIN   ║
-║               ║     ║               ║     ║               ║     ║               ║
-║  Step through ║     ║  Identify     ║     ║  Find false   ║     ║  Plain-English ║
-║  execution    ║     ║  bug pattern  ║     ║  assumption   ║     ║  root cause   ║
-╚═══════════════╝     ╚═══════════════╝     ╚═══════════════╝     ╚═══════════════╝
-```
-
-</div>
-
-| Phase | Engine | Output |
-|:------|:-------|:-------|
-| **Phase 1** — Dynamic Trace | Steps through code line-by-line | Variable states, execution path, moment of failure |
-| **Phase 2** — Pattern Match | Compares against known bug signatures | Confidence-scored pattern identification (e.g. *97%*) |
-| **Phase 3** — Root Cause | Isolates the false assumption | `⚠️ "You assumed X, but X is false because..."` |
-| **Phase 4** — Suggested Fix | Generates corrected code | Drop-in replacement with explanation |
-
----
+<br/>
 
 ## 🎯 Interactive Scenarios
 
-Six carefully crafted debugging scenarios — each one a real-world trap that catches even experienced developers:
+Six carefully crafted debugging scenarios — each one a real-world trap that catches even experienced developers.
 
-<div align="center">
-
-```
-  ┌─────────────────────────────────────────────────────────────────┐
-  │                                                                 │
-  │   🔢  Off-By-One Array Error          ╸╸╸╸╸  Logic Error       │
-  │   ⏳  Null Reference in Async Flow    ╸╸╸╸╸  Async Error       │
-  │   ⚛️  State Mutation in React          ╸╸╸╸╸  React Bug         │
-  │   🔒  Stale Closure in setTimeout     ╸╸╸╸╸  Closure Bug       │
-  │   ⚖️  Loose Equality Gotcha            ╸╸╸╸╸  Type Coercion     │
-  │   📦  Variable Hoisting Surprise      ╸╸╸╸╸  Scope Bug         │
-  │                                                                 │
-  └─────────────────────────────────────────────────────────────────┘
-```
-
-</div>
+<br/>
 
 <details>
-<summary><b>🔢 Off-By-One Array Error</b> — <code>i = arr.length</code> when max index is <code>arr.length - 1</code></summary>
+<summary>🔢 <b>Off-By-One Array Error</b> &nbsp;—&nbsp; <code>Logic Error</code></summary>
 
-```js
-// ❌ The bug
-for (let i = arr.length; i > arr.length - 3; i--) {
-  result.push(arr[i]); // arr[5] → undefined!
-}
+<br/>
 
-// ✅ The fix
-for (let i = arr.length - 1; i > arr.length - 4; i--) {
-  result.push(arr[i]); // arr[4] → 'e' ✓
-}
+| | |
+|---|---|
+| **The Bug** | `i = arr.length` — but max valid index is `arr.length - 1` |
+| **False Assumption** | *"`arr.length` is a valid array index"* |
+
+```diff
+  function getLastThreeItems(arr) {
+    const result = [];
+-   for (let i = arr.length; i > arr.length - 3; i--) {
++   for (let i = arr.length - 1; i > arr.length - 4; i--) {
+      result.push(arr[i]);
+    }
+    return result;
+  }
 ```
-**False assumption:** *"`arr.length` is a valid array index"*
+
 </details>
 
 <details>
-<summary><b>⏳ Null Reference in Async Flow</b> — Using <code>.then()</code> without <code>await</code></summary>
+<summary>⏳ <b>Null Reference in Async Flow</b> &nbsp;—&nbsp; <code>Async Error</code></summary>
 
-```js
-// ❌ The bug
-fetchUser(userId).then(data => { user = data; });
-displayName(user.name); // 💥 user is still null!
+<br/>
 
-// ✅ The fix
-const user = await fetchUser(userId);
-displayName(user.name); // ✓ user is guaranteed populated
+| | |
+|---|---|
+| **The Bug** | `.then()` used without `await` — code continues before Promise resolves |
+| **False Assumption** | *"The `.then()` callback runs before the next line"* |
+
+```diff
+  async function loadUserProfile(userId) {
+-   let user = null;
+-   fetchUser(userId).then(data => { user = data; });
+-   displayName(user.name);  // 💥 null!
++   const user = await fetchUser(userId);
++   displayName(user.name);  // ✅ guaranteed populated
+  }
 ```
-**False assumption:** *"The `.then()` callback runs before the next line"*
+
 </details>
 
 <details>
-<summary><b>⚛️ State Mutation in React</b> — Direct mutation → React skips re-render</summary>
+<summary>⚛️ <b>State Mutation in React</b> &nbsp;—&nbsp; <code>React Bug</code></summary>
 
-```js
-// ❌ The bug
-todo.done = !todo.done;  // mutating existing state object
-setTodos(todos);         // same reference → React sees no change
+<br/>
 
-// ✅ The fix
-setTodos(todos.map(t =>
-  t.id === id ? { ...t, done: !t.done } : t
-));
+| | |
+|---|---|
+| **The Bug** | Direct mutation of state object → same reference → React skips re-render |
+| **False Assumption** | *"React detects changes inside state objects"* |
+
+```diff
+  function toggleTodo(id) {
+-   const todo = todos.find(t => t.id === id);
+-   todo.done = !todo.done;  // mutating!
+-   setTodos(todos);         // same ref!
++   setTodos(todos.map(t =>
++     t.id === id ? { ...t, done: !t.done } : t
++   ));
+  }
 ```
-**False assumption:** *"React detects changes inside state objects"*
+
 </details>
 
 <details>
-<summary><b>🔒 Stale Closure in setTimeout</b> — All callbacks capture <code>count = 0</code></summary>
+<summary>🔒 <b>Stale Closure in setTimeout</b> &nbsp;—&nbsp; <code>Closure Bug</code></summary>
 
-```js
-// ❌ The bug — all 5 callbacks compute 0 + 1 = 1
-setCount(count + 1);
+<br/>
 
-// ✅ The fix — functional updater uses latest state
-setCount(prev => prev + 1);
+| | |
+|---|---|
+| **The Bug** | All 5 callbacks capture `count = 0`, so final count is 1 instead of 5 |
+| **False Assumption** | *"`count` inside the callback reflects the current state"* |
+
+```diff
+  for (let i = 0; i < 5; i++) {
+    setTimeout(() => {
+-     setCount(count + 1);     // all compute 0+1 = 1
++     setCount(prev => prev + 1); // each uses latest
+    }, i * 1000);
+  }
 ```
-**False assumption:** *"`count` inside the callback reflects current state"*
+
 </details>
 
 <details>
-<summary><b>⚖️ Loose Equality Gotcha</b> — <code>0 == ''</code> is <code>true</code></summary>
+<summary>⚖️ <b>Loose Equality Gotcha</b> &nbsp;—&nbsp; <code>Type Coercion</code></summary>
 
-```js
-// ❌ The bug
-if (formData.age == '') // 0 == '' → true! (both coerce to 0)
+<br/>
 
-// ✅ The fix
-if (formData.age === '' || formData.age == null)
+| | |
+|---|---|
+| **The Bug** | `0 == ''` is `true` — JavaScript coerces both to `0` |
+| **False Assumption** | *"`==` reliably checks if a field is empty"* |
+
+```diff
+- if (formData.age == '') {           // 0 == '' → true!
++ if (formData.age === '' || formData.age == null) {
+    errors.push('Age is required');
+  }
 ```
-**False assumption:** *"`==` reliably checks if a field is empty"*
+
 </details>
 
 <details>
-<summary><b>📦 Variable Hoisting Surprise</b> — <code>var</code> ignores block scope</summary>
+<summary>📦 <b>Variable Hoisting Surprise</b> &nbsp;—&nbsp; <code>Scope Bug</code></summary>
 
-```js
-// ❌ The bug
-for (var i = 0; ...) { var discount = 0; }
-console.log(discount); // 20 — still accessible!
-console.log(i);        // 3  — leaked from loop!
+<br/>
 
-// ✅ The fix — use let/const for block scoping
-for (let i = 0; ...) { let discount = 0; }
+| | |
+|---|---|
+| **The Bug** | `var` is function-scoped — variables leak out of loops and if-blocks |
+| **False Assumption** | *"`var` inside a block stays in that block"* |
+
+```diff
+  function processOrders(orders) {
+-   var total = 0;
+-   for (var i = 0; i < orders.length; i++) {
+-     var discount = 0;
++   let total = 0;
++   for (let i = 0; i < orders.length; i++) {
++     let discount = 0;
+      // ...
+    }
+  }
 ```
-**False assumption:** *"`var` inside a block stays in that block"*
+
 </details>
 
----
+<br/>
 
-## ✨ What Makes This Special
+## ✨ Features
 
-```
- ╭──────────────────────────────────────────────────────────╮
- │  🎬  Real-time animated execution trace                  │
- │  📊  Confidence-scored pattern matching with glow bars   │
- │  ⚠️  False assumption detection & callout                │
- │  ✅  Expected vs. actual intent tests (pass/fail)        │
- │  ⌨️  Typewriter-animated root cause explanations         │
- │  🛠️  Syntax-highlighted corrected code                   │
- │  🌌  Particle background + glassmorphism UI              │
- │  📱  Fully responsive (desktop → mobile)                 │
- ╰──────────────────────────────────────────────────────────╯
-```
+<table>
+<tr><td>🎬</td><td><b>Animated Execution Trace</b></td><td>Watch variables change in real-time as the debugger steps through code</td></tr>
+<tr><td>📊</td><td><b>Pattern Confidence Bars</b></td><td>Animated gradient bars with glow effects showing match confidence</td></tr>
+<tr><td>⚠️</td><td><b>False Assumption Detection</b></td><td>The core insight — what you <i>thought</i> was true, but isn't</td></tr>
+<tr><td>✅</td><td><b>Intent Tests</b></td><td>Expected vs. actual behavior with pass/fail badges</td></tr>
+<tr><td>⌨️</td><td><b>Typewriter Effect</b></td><td>Root cause typed out character-by-character in real-time</td></tr>
+<tr><td>🛠️</td><td><b>Suggested Fix</b></td><td>Syntax-highlighted corrected code as a drop-in replacement</td></tr>
+<tr><td>🌌</td><td><b>Particle Background</b></td><td>Floating animated particles with glassmorphism panels</td></tr>
+<tr><td>📱</td><td><b>Fully Responsive</b></td><td>Adapts seamlessly from desktop to mobile</td></tr>
+</table>
 
----
+<br/>
 
-## � Quick Start
+## 🚀 Quick Start
 
 ```bash
 # Clone
@@ -227,49 +250,46 @@ npm run dev          # → http://localhost:5173
 npm run build
 ```
 
----
+<br/>
 
-## � Architecture
+## 📁 Project Structure
 
 ```
-ai-debugger-explains-why/
-│
-├── index.html                  ← Entry point (Google Fonts loaded here)
-├── vite.config.ts              ← Vite + React + Tailwind + SingleFile plugin
-├── package.json                ← Dependencies & scripts
-│
-└── src/
-    ├── main.tsx                ← React mount point
-    ├── index.css               ← Glassmorphism, gradients, animations, noise
-    ├── App.tsx                 ← 🧠 Everything: components + main app + landing
-    │   ├── ParticlesBackground    → Floating animated particles
-    │   ├── TypeWriter             → Character-by-character text reveal
-    │   ├── ConfidenceBar          → Animated gradient progress bars
-    │   ├── CodeViewer             → Syntax-highlighted code with active line tracking
-    │   ├── PhaseIndicator         → TRACING → MATCHING → ANALYZING → COMPLETE
-    │   ├── TraceStepRow           → Individual trace step with animations
-    │   ├── App                    → Orchestrates the 4-phase debug sequence
-    │   └── LandingView            → Hero section + scenario picker
-    │
-    ├── data/
-    │   └── scenarios.ts        ← 📦 All 6 bug definitions (code, traces, patterns, fixes)
-    │
-    └── utils/
-        └── cn.ts               ← clsx + tailwind-merge utility
+📦 ai-debugger-explains-why
+ ┣ 📄 index.html                ← Entry point + Google Fonts
+ ┣ ⚙️ vite.config.ts             ← Vite + React + Tailwind + SingleFile
+ ┣ 📄 package.json
+ ┗ 📂 src
+   ┣ 📄 main.tsx                ← React mount
+   ┣ 🎨 index.css               ← Glassmorphism, gradients, noise, animations
+   ┣ 🧠 App.tsx                 ← All components + main app
+   ┃   ┣ ParticlesBackground       Floating animated particles
+   ┃   ┣ TypeWriter                 Character-by-character text reveal
+   ┃   ┣ ConfidenceBar             Animated gradient progress bars
+   ┃   ┣ CodeViewer                 Code with active line tracking
+   ┃   ┣ PhaseIndicator            TRACE → MATCH → ANALYZE → COMPLETE
+   ┃   ┣ TraceStepRow              Animated trace step rows
+   ┃   ┣ App                       Orchestrates the 4-phase debug sequence
+   ┃   ┗ LandingView               Hero + scenario picker
+   ┣ 📂 data
+   ┃   ┗ 📄 scenarios.ts        ← 6 bug definitions (code, traces, patterns, fixes)
+   ┗ 📂 utils
+       ┗ 📄 cn.ts               ← clsx + tailwind-merge utility
 ```
 
----
+<br/>
 
-## 🎨 Design Language
+## 🎨 Design System
 
-| Element | Implementation |
-|:--------|:--------------|
-| **Background** | Animated mesh gradient + noise overlay + floating particles |
-| **Panels** | Glassmorphism with `backdrop-blur` and cyan/emerald borders |
-| **Typography** | Orbitron · Audiowide · Rajdhani · Share Tech Mono · Exo 2 |
-| **Colors** | Cyan `#00e5ff` · Emerald `#00ff88` · Amber `#ff8800` on dark slate |
-| **Animations** | Fade-in, slide-in, scale-in, pulse-glow, scan-line, typewriter |
-| **Code** | Dark panel with line numbers, error highlighting, active trace indicator |
+<table>
+<tr><td><b>Background</b></td><td>Animated mesh gradient + noise overlay + floating particles</td></tr>
+<tr><td><b>Panels</b></td><td>Glassmorphism with <code>backdrop-blur</code> and cyan/emerald borders</td></tr>
+<tr><td><b>Typography</b></td><td>Orbitron · Audiowide · Rajdhani · Share Tech Mono · Exo 2</td></tr>
+<tr><td><b>Palette</b></td><td>🟦 Cyan <code>#00e5ff</code> · 🟩 Emerald <code>#00ff88</code> · 🟧 Amber <code>#ff8800</code></td></tr>
+<tr><td><b>Animations</b></td><td>Fade-in · Slide-in · Scale-in · Pulse-glow · Scan-line · Typewriter</td></tr>
+</table>
+
+<br/>
 
 ---
 
@@ -277,24 +297,20 @@ ai-debugger-explains-why/
 
 <br/>
 
-```
-╔══════════════════════════════════════════════════════╗
-║                                                      ║
-║   "Understanding bugs is more important              ║
-║    than just fixing them."                            ║
-║                                                      ║
-╚══════════════════════════════════════════════════════╝
-```
+**Understanding bugs is more important than just fixing them.**
 
 <br/>
 
-**[🚀 Try the Live Demo →](https://ai-debugger-explains-why.surge.sh)**
+<a href="https://ai-debugger-explains-why.surge.sh"><img src="https://img.shields.io/badge/%F0%9F%9A%80%20TRY%20THE%20LIVE%20DEMO%20%E2%86%92-00e5ff?style=for-the-badge&labelColor=0d1117" alt="Try Live Demo"/></a>
 
-<br/>
+<br/><br/>
 
-Built with `React` + `TypeScript` + `Vite` + `Tailwind CSS v4`
+Built with `React` · `TypeScript` · `Vite` · `Tailwind CSS v4`
 
 Made with ☕ and curiosity
 
+<br/>
+
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:00e5ff,100:00ff88&height=100&section=footer" width="100%"/>
+
 </div>
-]]>
